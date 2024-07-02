@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name   Don-t-turn-it-off
+@namespace youtube
+@version 1.6.4
+@downloadURL https://raw.githubusercontent.com/psychic1999/Don-t-turn-it-off/main/Don-t-turn-it-off.user.css
+@updateURL https://raw.githubusercontent.com/psychic1999/Don-t-turn-it-off/main/Don-t-turn-it-off.user.css
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+ytd-search ytd-video-renderer {
+    display: inline-block;  
+    width: 33%;
+    margin-right: 4px;
+    min-width: 395px;
+}
+div[tab-identifier="FEsubscriptions"] ytm-item-section-renderer{
+ display: inline-flex;
+   width: calc(50% - 4px);
+    margin:2px;
+ flex-direction: column;
+}
+    ytm-search ytm-video-with-context-renderer.item{
+ display: inline-flex;
+   width: calc(50% - 4px);
+    margin:2px;
+ flex-direction: column;
+}
+    div[tab-identifier="FEsubscriptions"] .video-with-context-renderer-ghost-card,ytm-search .video-with-context-renderer-ghost-card{
+ display: inline-flex;
+   width: calc(50% - 4px);
+    margin:2px;
+ flex-direction: column;
+}
+}
